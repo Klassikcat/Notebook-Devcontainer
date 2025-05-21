@@ -10,4 +10,6 @@ RUN pip install uv && \
     uv init && \
     uv add -r requirements.txt
 
-CMD ["/bin/bash", ".devcontainer/post-script"]
+RUN /bin/bash .devcontainer/post-script
+
+CMD ["uv", "run", "marimo", "edit"]

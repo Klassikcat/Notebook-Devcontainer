@@ -8,4 +8,3 @@ set_default_editor() {
 }
 
 set_default_editor
-uv run marimo edit
