@@ -14,5 +14,5 @@
 		}
 	},
 	"forwardPorts": [2818],
-	"postStartCommand": "uv run marimo edit"
+	"postStartCommand": "marimo edit"
 }
