@@ -1,5 +1,7 @@
 ipykernel
 regex
+jupyter
+jupyterlab
 marimo
 marimo[sql]
 openai
