@@ -1,0 +1,6 @@
+ipykernel
+regex
+marimo
+marimo[sql]
+openai
+polars
