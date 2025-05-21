@@ -4,11 +4,9 @@ RUN apt-get update && apt-get install -y \
     build-essential \
     vim
 
-WORKDIR /workspace
+WORKDIR /workspaces
 COPY . .
-RUN pip install uv && \
-    uv init && \
-    uv add -r requirements.txt
+RUN pip install uv
 
 RUN git config --global core.editor 'vim'
 RUN echo 'export EDITOR=vim' >> $HOME/.bashrc
