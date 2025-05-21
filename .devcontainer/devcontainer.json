@@ -13,6 +13,6 @@
 			]
 		}
 	},
-	"forwardPorts": [2818],
+	"forwardPorts": [2718],
 	"postStartCommand": "uv init && uv add -r requirements.txt && uv run marimo edit"
 }
