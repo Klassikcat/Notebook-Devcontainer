@@ -10,6 +10,7 @@ RUN pip install uv && \
     uv init && \
     uv add -r requirements.txt
 
-RUN /bin/bash .devcontainer/post-script
-
-CMD ["uv", "run", "marimo", "edit"]
+RUN git config --global core.editor 'vim'
+RUN echo 'export EDITOR=vim' >> ~/.bashrc
+RUN echo 'export VISUAL=vim' >> ~/.bashrc
+RUN echo 'export TZ=Asia/Seoul' >> ~/.bashrc
