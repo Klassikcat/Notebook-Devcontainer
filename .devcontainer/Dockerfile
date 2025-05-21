@@ -1,5 +1,7 @@
 FROM mcr.microsoft.com/devcontainers/python:1-3.12
 
+WORKDIR /workspace
+
 RUN apt-get update && apt-get install -y \
     build-essential \
     vim
@@ -7,7 +9,5 @@ RUN apt-get update && apt-get install -y \
 RUN pip install uv && \
     uv init && \
     uv add -r requirements.txt
-
-COPY . .
 
 CMD ["/bin/bash", ".devcontainer/post-script"]
